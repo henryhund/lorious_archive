@@ -1,6 +1,10 @@
+<% if user_signed_in? %>
+	<h2>Welcome to Lorious! You're logged in!</h2>
+<% else %>
 <div>
-        <h2>Your own personal expert network</h2>
-        <h4>Why struggle to solve that problem? You are seconds away from finding someone who can help.</h4>
-        <h6>Stop spending hours on forums or deciphering instruction manuals. Just ask someone.</h6>
-    	<p> <%= link_to 'Get started today',  "test" , class: "btn btn-large btn-primary" %> </p>
+  <h2>Your own personal expert network</h2>
+  <h4>Why struggle to solve that problem? You are seconds away from finding someone who can help.</h4>
+  <h6>Stop spending hours on forums or deciphering instruction manuals. Just ask someone.</h6>
+	<p> <%= link_to 'Get started today',  "test" , class: "btn btn-large btn-primary" %> </p>
 </div>
+<% end %>
