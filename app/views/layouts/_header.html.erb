@@ -9,14 +9,7 @@
              <%= link_to "Lorious", root_path, class:"brand" %>
 
                 <div class="nav-collapse">
-                    <ul class="nav">
-                        <li><%= link_to 'Home',  root_path %></li>
-                        <li><%= link_to 'About',  about_path %></li>
-                        <li><%= link_to 'Contact',  "/about/contact" %></li>
-                        <li><%= link_to 'FAQ',  "/about/faq" %></li>
-                        <li><%= link_to 'Become an Expert',  "/become-an-expert" %></li>
-                        <li><%= link_to 'Legal',  "/about/legal" %></li>
-                    </ul>
+
                     <ul class="nav pull-right">
                     <% if user_signed_in? %>
                       <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
